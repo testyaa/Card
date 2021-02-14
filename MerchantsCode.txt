@@ -42,10 +42,11 @@
 3.查看商户投放的优惠券
    GET:127.0.0.1:8081/merchants/passtemplate/4
 
-4.更新投放的优惠券
+4.更新投放的优惠券（有id）
     PUT: 127.0.0.1:8081/merchants/passtemplate
     header: token/llxs-passbook-merchants
     {
+         "id": 7,
          "summary": "领到就是赚到",
          "merchantId": 4,
          "goodsId": 1001,
@@ -55,7 +56,6 @@
          "start": "2020-05-01",
           "discount": 95,
           "end": "2020-08-30",
-          "id": 7,
           "title": "水果优惠券",
           "desc": "新水果九五折优惠"
      }
