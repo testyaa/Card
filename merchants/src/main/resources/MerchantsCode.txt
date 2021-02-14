@@ -1,3 +1,4 @@
+1.创建商户（主要用于测试）
     POST: 127.0.0.1:8081/merchants/create
     header: token/llxs-passbook-merchants
     {
@@ -41,7 +42,7 @@
 3.查看商户投放的优惠券
    GET:127.0.0.1:8081/merchants/passtemplate/4
 
-4.更新投放的优惠券
+4.更新投放的优惠券（有id）
     PUT: 127.0.0.1:8081/merchants/passtemplate
     header: token/llxs-passbook-merchants
     {
